@@ -11,7 +11,7 @@ const InfoBoxes = () => {
             buttonInfo={{
               text: "Browse Properties",
               link: "/properties",
-              bgColor: "bg-black",
+              bgColor: "bg-[#121212]",
             }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -19,11 +19,11 @@ const InfoBoxes = () => {
           </InfoBox>
           <InfoBox
             heading="For Property Owners"
-            bgColor="bg-blue-100"
+            bgColor="bg-purple-100"
             buttonInfo={{
               text: "Add Property",
               link: "/properties/add",
-              bgColor: "bg-black",
+              bgColor: "bg-[#121212]",
             }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
