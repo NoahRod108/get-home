@@ -1,5 +1,6 @@
 import PropertyCard from "@/components/PropertyCard";
 
+// Fetch property data for database
 async function fetchProperties() {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/properties`);

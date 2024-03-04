@@ -1,6 +1,7 @@
 import PropertyCard from "./PropertyCard";
 import Link from "next/link";
 
+// Fetch property data for database
 async function fetchProperties() {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/properties`);
