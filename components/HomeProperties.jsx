@@ -3,11 +3,16 @@ import Link from "next/link";
 import { fetchProperties } from "@/utils/requests";
 
 const HomeProperties = async () => {
-  const properties = await fetchProperties();
+  const data = await fetchProperties();
+  const { properties } = data;
 
   const recentProperties = properties
-    .sort(() => Math.random() - Math.random())
+    .sort((a, b) => Math.random() - Math.random())
     .slice(0, 3);
+
+  recentProperties.sort(
+    (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+  );
 
   return (
     <>
