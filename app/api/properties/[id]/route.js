@@ -1,5 +1,6 @@
 import connectDb from "@/config/db";
 import Property from "@/models/Property";
+import cloudinary from "@/config/cloudinary";
 import { getSessionUser } from "@/utils/getSessionUser";
 
 // GET /api/properties/:id
@@ -41,6 +42,19 @@ export const DELETE = async (req, { params }) => {
     // Verify if user is authorized
     if (property.owner.toString() !== userId) {
       return new Response("Unauthorized", { status: 401 });
+    }
+
+    // extract public id's from image url in DB
+    const publicIds = property.images.map((imageUrl) => {
+      const parts = imageUrl.split("/");
+      return parts.at(-1).split(".").at(0);
+    });
+
+    // Delete images from Cloudinary
+    if (publicIds.length > 0) {
+      for (let publicId of publicIds) {
+        await cloudinary.uploader.destroy("get-home/" + publicId);
+      }
     }
 
     await property.deleteOne();

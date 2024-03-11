@@ -46,24 +46,27 @@ const PropertyCard = ({ property }) => {
         </h3>
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
-          <p>
-            <i className="fa-solid fa-bed"></i>
-            <FaBed className="inline mr-2" />
+          <div className="flex-col">
+            <div className="flex justify-center items-center mb-2">
+              <FaBed className="inline" />
+            </div>
             {property.beds}
             <span className="md:hidden lg:inline"> Beds</span>
-          </p>
-          <p>
-            <i className="fa-solid fa-bath"></i>
-            <FaBath className="inline mr-2" />
+          </div>
+          <div className="flex-col">
+            <div className="flex justify-center items-center mb-2">
+              <FaBath className="inline" />
+            </div>
             {property.baths}
             <span className="md:hidden lg:inline"> Baths</span>
-          </p>
-          <p>
-            <i className="fa-solid fa-ruler-combined"></i>
-            <FaRulerCombined className="inline mr-2" />
+          </div>
+          <div className="flex-col">
+            <div className="flex justify-center items-center mb-2">
+              <FaRulerCombined className="inline" />
+            </div>
             {property.square_feet}{" "}
             <span className="md:hidden lg:inline">sqft</span>
-          </p>
+          </div>
         </div>
 
         <div className="flex justify-center gap-4 text-green-900 text-sm mb-4">

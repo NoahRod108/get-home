@@ -14,8 +14,8 @@ const InfoBoxes = () => {
               bgColor: "bg-[#121212]",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            unde, illo quis ratione magnam totam?
+            Look into the many homes listed. Don't forget to favorite the
+            listings you're interested in!
           </InfoBox>
           <InfoBox
             heading="For Property Owners"
@@ -26,8 +26,7 @@ const InfoBoxes = () => {
               bgColor: "bg-[#121212]",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            unde, illo quis ratione magnam totam?
+            Start by adding a new property to your profile!
           </InfoBox>
         </div>
       </div>
