@@ -14,8 +14,8 @@ const InfoBoxes = () => {
               bgColor: "bg-[#121212]",
             }}
           >
-            Look into the many homes listed. Don't forget to favorite the
-            listings you're interested in!
+            Look into the many homes listed. You can favorite the listings you
+            are interested in!
           </InfoBox>
           <InfoBox
             heading="For Property Owners"
