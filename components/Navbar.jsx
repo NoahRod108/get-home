@@ -165,7 +165,7 @@ const Navbar = () => {
                     <span className="absolute -inset-1.5"></span>
                     <span className="sr-only">Open user menu</span>
                     <Image
-                      className="h-8 w-8 rounded-full border-2 border-solid"
+                      className="h-10 w-10 rounded-full border-2 border-solid h-"
                       src={profileImage || profileDefault}
                       alt=""
                       width={40}
