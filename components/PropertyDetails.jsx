@@ -84,7 +84,10 @@ const PropertyDetails = ({ property }) => {
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none">
           {property.amenities.map((amenity, index) => (
-            <li key={index} className="mb-2">
+            <li
+              key={index}
+              className="mb-2 p-2 bg-purple-100 rounded-lg w-1/2 text-center"
+            >
               {amenity}
             </li>
           ))}
